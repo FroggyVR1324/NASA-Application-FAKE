@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a33">
+  <title>NASA — Applicant Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"><span>UNITED STATES • SPACE PROGRAMME</span><span>APPLICANT SERVICES</span></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="NASA Applicant Portal home">
+      <div class="logo-placeholder">NASA<br><small>LOGO</small></div>
+      <div><strong>National Aeronautics<br>&amp; Space Administration</strong><small>OFFICIAL APPLICANT PORTAL</small></div>
+    </a>
+    <div class="header-right"><span class="secure-dot"></span> SECURE APPLICATION SESSION</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CAREERS • HUMAN SPACEFLIGHT</p>
+        <h1>YOUR NEXT<br><em>MISSION</em><br>STARTS HERE.</h1>
+        <p class="hero-text">Apply to join the next generation of space explorers. Tell us about yourself, your experience, and why you're ready to go beyond.</p>
+        <div class="mission-tag"><span>APPLICATION WINDOW</span><strong>NOW ACCEPTING APPLICANTS</strong></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Rocket launch image placeholder">
+        <div class="image-placeholder"><span>IMAGE PLACEHOLDER</span><small>Replace with a rocket launch image</small></div>
+        <div class="art-caption">HUMAN SPACEFLIGHT PROGRAMME <span>01 / 04</span></div>
+      </div>
+    </section>
+
+    <section class="form-section" id="application">
+      <div class="section-heading"><div><p class="eyebrow">FORM 01-A • PERSONNEL</p><h2>Applicant information</h2></div><span class="required-note">* REQUIRED FIELDS</span></div>
+      <form id="application-form">
+        <div class="form-grid">
+          <label>First name *<input name="firstName" autocomplete="given-name" required placeholder="Enter first name"></label>
+          <label>Last name *<input name="lastName" autocomplete="family-name" required placeholder="Enter last name"></label>
+          <label>Email address *<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+          <label>Date of birth *<input name="dob" type="date" required></label>
+          <label class="full">Why do you want to join the space programme? *
+            <textarea name="motivation" rows="4" required placeholder="Tell us what motivates you..."></textarea>
+          </label>
+          <label class="full">Relevant experience
+            <textarea name="experience" rows="3" placeholder="Science, engineering, flying, teamwork, or anything else..."></textarea>
+          </label>
+          <label>Highest education level
+            <select name="education"><option value="">Select an option</option><option>Secondary school</option><option>College / Sixth form</option><option>University degree</option><option>Other</option></select>
+          </label>
+          <label>Preferred mission role
+            <select name="role"><option value="">Select a role</option><option>Astronaut candidate</option><option>Flight engineer</option><option>Mission specialist</option><option>Ground support</option></select>
+          </label>
+        </div>
+        <div class="form-bottom"><p>All fields marked * must be completed before submission.</p><button type="submit">SUBMIT APPLICATION <span>→</span></button></div>
+      </form>
+    </section>
+
+    <section class="confirmation hidden" id="confirmation" aria-live="polite">
+      <div class="status-icon">✓</div><p class="eyebrow">APPLICATION RECEIVED</p><h2>TRANSMISSION COMPLETE.</h2>
+      <p>Your application has been recorded for this demonstration. Keep an eye on your inbox for an update from the recruitment team.</p>
+      <div class="reference">APPLICATION REFERENCE <strong id="reference-number">NASA-000000</strong></div>
+      <button id="back-button" type="button" class="secondary-button">RETURN TO PORTAL</button>
+    </section>
+  </main>
+  <footer><span>© 2026 SPACE PROGRAMME • APPLICANT SERVICES</span><span>DEMONSTRATION WEBSITE — NOT AN OFFICIAL NASA SERVICE</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
